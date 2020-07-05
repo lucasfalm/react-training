@@ -1,17 +1,13 @@
 import React from 'react'
 import Header from './components/basics/Header'
 import Subheader from  './components/basics/Subheader'
+import Welcome from './components/basics/Welcome'
 
-export default function App(){ 
-    const welcome =  <h3> Welcome to React App! </h3>
-    var today = new Date()
-    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
-    
-    return(
+// simpliest way to write an arrow function
+export default _ => // _ with 1 param, could be (), or (props)  
         <>
             <Header />
-            <Subheader name="Lucas" date={ time } />
-            { welcome }
+            <Subheader name="Lucas" />
+            <Welcome />
         </>
-    )
-}
+// no returns because the arrow implicitly returns the last evaluetade value

@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function Subheader(props) {
+export default props => {
     return(
         <React.Fragment>
-            <h2> Hello, { props.name }. { props.date } </h2>
+            <h2> Hello, { props.name }.</h2>
         </React.Fragment>
     )
 }
