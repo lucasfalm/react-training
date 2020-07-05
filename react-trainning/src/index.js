@@ -9,10 +9,10 @@ var today = new Date()
 var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
 
 ReactDOM.render(
-    <div> 
+    <>
         <Header></Header>
         <Subheader name="Lucas" date={ time }></Subheader>
         { tag }
-    </div>,
+    </>,
     document.getElementById('root')
 )
