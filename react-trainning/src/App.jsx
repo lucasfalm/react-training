@@ -8,7 +8,7 @@ import Card from './components/layout/Card'
 // simpliest way to write an arrow function
 export default _ => // _ with 1 ignored param, could be (), or (props)  
         <div id="App">
-            <Card title="Welcome Name"> 
+            <Card title="Header"> 
                 <Header />
             </Card>
 
@@ -16,7 +16,7 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                 <Subheader name="Lucas" />
             </Card>
 
-            <Card title="Welcome"> 
+            <Card title="Welcome without props"> 
                 <Welcome />
             </Card>
 
