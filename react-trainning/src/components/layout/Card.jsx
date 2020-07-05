@@ -6,8 +6,9 @@ export default (props) => {
     <>
         <div className="Card">
             <div className="Title"> { props.title } </div>
-            <div className="Content"> { props.children } </div>
+            <div className="Content"> { props.children } </div> 
         </div>
     </>
     )
 }
+// props.children are all the childrens inside this component
