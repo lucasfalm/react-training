@@ -9,6 +9,7 @@ ReactDOM.render(
     
     <div> 
         <Header></Header>
+        { tag }
     </div>,
     document.getElementById('root')
 )
