@@ -12,6 +12,8 @@ import Say from './components/basics/Say'
 import FatherSon from './components/relationship/FatherSon'
 import SonFather from './components/relationship/SonFather'
 import Son from './components/relationship/SonProps'
+import Input from './components/form/Input'
+
 import './App.css'
 
 // simpliest way to write an arrow function
@@ -24,6 +26,10 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
 
                 <Card title="Welcome Name" color="#8503ff"> 
                     <Subheader name="Lucas" />
+                </Card>
+
+                <Card title="Controled component" color="#8503ff"> 
+                    <Input />
                 </Card>
 
                 <Card title="Direct comunication (props)" color="#184C69"> 
