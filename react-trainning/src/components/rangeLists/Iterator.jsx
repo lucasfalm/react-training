@@ -5,14 +5,14 @@ export default _ => {
     const studentsLI = students.map((student) => {
         return (
             <li>
-                <strong>ID:</strong> { student.id } 
-                <p> Name: { student.name }</p>
+                <strong> ID: </strong> { student.id } 
+                <strong> Name: </strong> { student.name }
             </li>
         )
     })
 
     return (
-        <ul style={{listStyle:"none"}}>
+        <ul style= {{ listStyle:"none" }} >
             { studentsLI }
         </ul>
     )
