@@ -4,6 +4,8 @@ import Subheader from  './components/basics/Subheader'
 import Welcome from './components/basics/Welcome'
 import Random from './components/basics/Random'
 import Card from './components/layout/Card'
+import Cannabis from './components/basics/Cannabis'
+import Weed from './components/basics/Weed'
 import './App.css'
 
 // simpliest way to write an arrow function
@@ -24,6 +26,13 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
 
                 <Card title="Random" color="#e26d5a"> 
                     <Random max = { 20 }  min = { 50 } />
+                </Card>
+
+                <Card title="Props children" color="#e26d5a"> 
+                    <Cannabis typeName="Sativa">
+                        <Weed flowerName="Gorilla Haze" />
+                        <Weed flowerName="Nothernligth" />
+                    </Cannabis>
                 </Card>
             </div>
         </div>
