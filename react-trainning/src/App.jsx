@@ -18,7 +18,7 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                     <Subheader name="Lucas" />
                 </Card>
 
-                <Card title="Welcome without props" color="red"> 
+                <Card title="Welcome without props"> 
                     <Welcome />
                 </Card>
 

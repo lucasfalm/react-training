@@ -3,7 +3,7 @@ import './Card.css'
 
 export default (props) => { 
     const style = { 
-        backgroundColor: props.color
+        backgroundColor: props.color || "blue"
     }
     return (
     <>
