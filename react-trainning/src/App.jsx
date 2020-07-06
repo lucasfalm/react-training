@@ -9,6 +9,9 @@ import Weed from './components/basics/Weed'
 import Iterator from './components/rangeLists/Iterator'
 import Products from './components/rangeLists/Products'
 import Say from './components/basics/Say'
+import FatherSon from './components/relationship/FatherSon'
+import SonFather from './components/relationship/SonFather'
+import Son from './components/relationship/Son'
 import './App.css'
 
 // simpliest way to write an arrow function
@@ -23,7 +26,20 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                     <Subheader name="Lucas" />
                 </Card>
 
-                <Card title="Welcome without props" color="#0d4a6f"> 
+                <Card title="Direct comunication (props)" color="#184C69"> 
+                    <FatherSon lastname="Feijo">
+                        <Son name="Lucas" />
+                        <Son name="Neusa" />
+                    </FatherSon>
+                </Card>
+
+                <Card title="Indirect comunication (state)" color="#184C69"> 
+                    <Son>
+                        <SonFather />
+                    </Son>
+                </Card>
+
+                <Card title="Welcome without props" color=""> 
                     <Welcome />
                 </Card>
     
