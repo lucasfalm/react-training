@@ -10,19 +10,19 @@ import './App.css'
 export default _ => // _ with 1 ignored param, could be (), or (props)  
         <div className="App">
             <div className="Cards">
-                <Card title="Header"> 
+                <Card title="Header" color="black"> 
                     <Header />
                 </Card>
 
-                <Card title="Welcome Name"> 
+                <Card title="Welcome Name" color="green"> 
                     <Subheader name="Lucas" />
                 </Card>
 
-                <Card title="Welcome without props"> 
+                <Card title="Welcome without props" color="red"> 
                     <Welcome />
                 </Card>
 
-                <Card title="Random"> 
+                <Card title="Random" color="purple"> 
                     <Random max = { 20 }  min = { 50 } />
                 </Card>
             </div>

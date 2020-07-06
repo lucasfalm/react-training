@@ -1,11 +1,9 @@
 .Card { 
-    background-color: red;
-    border: 3px solid red;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
     min-width: 300px;
-    max-width: 600px;
+    max-width: 300px;
 
     display: flex;
     flex-direction: column;
