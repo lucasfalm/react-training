@@ -10,9 +10,10 @@
     flex-direction: column;
 }
 
-.Card:hover{
+.Card:hover {
     opacity: 0.5;
 }
+
 .Card .Title { 
     padding: 5px 0px;
     display: flex;
