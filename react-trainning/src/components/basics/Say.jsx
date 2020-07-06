@@ -2,7 +2,7 @@ import React from 'react'
 import If, { Else } from './If'
 
 export default props => { 
-    const what = props.what || []
+    const what = props.what || ""
 
     return (
         <div>

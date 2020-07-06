@@ -28,7 +28,7 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                 </Card>
     
                 <Card title="Say something" color="#0d4a6f"> 
-                    <Say what="Yo dude" />
+                    <Say />
                 </Card>
 
                 <Card title="Random" color="#e26d5a"> 
