@@ -1,4 +1,5 @@
-.Card { 
+.Card {
+    border: 3px solid;
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
