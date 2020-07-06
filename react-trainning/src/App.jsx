@@ -8,7 +8,7 @@ import Cannabis from './components/basics/Cannabis'
 import Weed from './components/basics/Weed'
 import Iterator from './components/rangeLists/Iterator'
 import Products from './components/rangeLists/Products'
-
+import Say from './components/basics/Say'
 import './App.css'
 
 // simpliest way to write an arrow function
@@ -25,6 +25,10 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
 
                 <Card title="Welcome without props" color="#0d4a6f"> 
                     <Welcome />
+                </Card>
+    
+                <Card title="Say something" color="#0d4a6f"> 
+                    <Say what="Yo dude" />
                 </Card>
 
                 <Card title="Random" color="#e26d5a"> 
