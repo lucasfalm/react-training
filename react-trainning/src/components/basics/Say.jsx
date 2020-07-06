@@ -6,7 +6,7 @@ export default props => {
 
     return (
         <div>
-            <If say={ what }>
+            <If content={ what }>
                 <h3> The lord say:</h3>
                 <span><strong> { what } </strong></span> 
                 <Else>

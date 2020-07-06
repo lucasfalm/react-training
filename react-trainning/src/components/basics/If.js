@@ -7,7 +7,7 @@ export default props => {
         return child !== elseChild
     })
 
-    if(props.say) {
+    if(props.content) {
         return ifChildren
     } else if(elseChild) { 
         return elseChild
