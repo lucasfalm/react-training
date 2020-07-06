@@ -4,16 +4,22 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 10px;
+    min-width: 300px;
+    max-width: 600px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .Card .Title { 
-    padding: 10px 0px;
+    padding: 5px 0px;
     display: flex;
     justify-content: center;
 }
 
 .Card .Content { 
-    padding: 20px;
+    padding: 10px;
     color: black;
     background-color: white;
+    flex-grow: 1;
 }
