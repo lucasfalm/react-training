@@ -11,7 +11,7 @@ import Products from './components/rangeLists/Products'
 import Say from './components/basics/Say'
 import FatherSon from './components/relationship/FatherSon'
 import SonFather from './components/relationship/SonFather'
-import Son from './components/relationship/Son'
+import Son from './components/relationship/SonProps'
 import './App.css'
 
 // simpliest way to write an arrow function
@@ -34,9 +34,9 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                 </Card>
 
                 <Card title="Indirect comunication (state)" color="#184C69"> 
-                    <Son>
-                        <SonFather />
-                    </Son>
+                    <SonFather>
+                        <Son />
+                    </SonFather>
                 </Card>
 
                 <Card title="Welcome without props" color=""> 
