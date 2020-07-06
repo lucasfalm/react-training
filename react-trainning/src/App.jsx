@@ -31,18 +31,18 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                     <Random max = { 20 }  min = { 50 } />
                 </Card>
 
-                <Card title="Props children" color="#e26d5a"> 
+                <Card title="Props children" color="#354228"> 
                     <Cannabis typeName="Sativa">
                         <Weed flowerName="Gorilla Haze" />
                         <Weed flowerName="Nothernligth" />
                     </Cannabis>
                 </Card>
 
-                <Card title="Iterator" color="#e26d5a"> 
+                <Card title="Iterator" color="#51eae6"> 
                     <Iterator />
                 </Card>
 
-                <Card title="Products" color="#e26d5a"> 
+                <Card title="Products" color="#23170f"> 
                     <Products />
                 </Card>
             </div>

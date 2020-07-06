@@ -5,7 +5,7 @@ import './Products.css'
 export default _ => { 
     const products = productsData.map((product) => {
         return (
-            <tr>
+            <tr key= { product.id } >
                 <td>{ product.id }</td>
                 <td>{ product.name }</td>
                 <td>{ product.price }</td>
