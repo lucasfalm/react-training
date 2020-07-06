@@ -34,9 +34,7 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                 </Card>
 
                 <Card title="Indirect comunication (state)" color="#184C69"> 
-                    <SonFather>
-                        <Son />
-                    </SonFather>
+                    <SonFather />
                 </Card>
 
                 <Card title="Welcome without props" color=""> 
