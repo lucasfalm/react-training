@@ -28,7 +28,7 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                     <Subheader name="Lucas" />
                 </Card>
 
-                <Card title="Controled component" color="#8503ff"> 
+                <Card title="Controlled component" color="#303030"> 
                     <Input />
                 </Card>
 
@@ -39,7 +39,7 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                     </FatherSon>
                 </Card>
 
-                <Card title="Indirect comunication (state)" color="#184C69"> 
+                <Card title="Indirect comunication (state)" color="#2f1c42"> 
                     <SonFather />
                 </Card>
 

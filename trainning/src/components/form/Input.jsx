@@ -10,7 +10,7 @@ export default _ => {
 
     return(
         <div className="inputArea">
-            <h1> { data } </h1>
+            <h3> { data } </h3>
             <input value={ data } onChange={ change } />
         </div>
     )
