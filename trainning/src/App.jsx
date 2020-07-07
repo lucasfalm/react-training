@@ -14,6 +14,7 @@ import SonFather from './components/relationship/SonFather'
 import Son from './components/relationship/SonProps'
 import Input from './components/form/Input'
 import Counter from './components/counter/Counter'
+import Millions from './components/Millions/Millions'
 
 import './App.css'
 
@@ -23,6 +24,10 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
             <div className="Cards">
                 <Card title="Header" color="#00ff40"> 
                     <Header />
+                </Card>
+                
+                <Card title="Millions" color="#eeae15"> 
+                   <Millions />
                 </Card>
 
                 <Card title="Welcome Name" color="#8503ff"> 
