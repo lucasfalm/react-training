@@ -13,6 +13,7 @@ import FatherSon from './components/relationship/FatherSon'
 import SonFather from './components/relationship/SonFather'
 import Son from './components/relationship/SonProps'
 import Input from './components/form/Input'
+import Counter from './components/counter/Counter'
 
 import './App.css'
 
@@ -26,6 +27,10 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
 
                 <Card title="Welcome Name" color="#8503ff"> 
                     <Subheader name="Lucas" />
+                </Card>
+
+                <Card title="Counter" color="#00ff40"> 
+                    <Counter />
                 </Card>
 
                 <Card title="Controlled component" color="#303030"> 
