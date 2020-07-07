@@ -11,7 +11,6 @@ class Counter extends Component {
         step: this.props.step || 5
     }
 
-
     inc = () => { 
         this.setState({
             count: this.state.count + this.state.step,
@@ -24,7 +23,7 @@ class Counter extends Component {
         })
     }
 
-    step = (newStep) => {
+    setStep = (newStep) => {
         this.setState({
             step: newStep
         })
@@ -34,11 +33,10 @@ class Counter extends Component {
         return ( 
             <div>
                 <Display count={ this.state.count } />
-                <Input count={ this.state.step } step={ this.step }/>
+                <Input count={ this.state.step } setStep={ this.setStep }/>
                 <Buttons inc={ this.inc } dec={ this.dec } />
             </div> 
         )
     }
 }
-
 export default Counter

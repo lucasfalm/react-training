@@ -6,7 +6,7 @@ export default props => {
         <>
             <span> How much </span>
             <input
-                onChange={ e => props.step(+e.target.value)}
+                onChange={ e => props.setStep(+e.target.value)}
                 value={ props.count }
             />
         </>
