@@ -5,13 +5,13 @@
     margin: 10px;
     min-width: 300px;
     max-width: 300px;
-    opacity: 1;
+    opacity: 0.5;
     display: flex;
     flex-direction: column;
 }
 
 .Card:hover {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .Card .Title { 

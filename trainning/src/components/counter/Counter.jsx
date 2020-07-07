@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Counter.css'
 
 class Counter extends Component { 
 
@@ -30,10 +31,10 @@ class Counter extends Component {
         return ( 
             <div>
                 <h2> { this.state.count }</h2>
-                <span>How much </span><input onChange={ this.step } />
-                <div>
-                    <button onClick={ this.inc }> + </button>
-                    <button onClick={ this.dec }> - </button>
+                <span> How much </span><input onChange={ this.step } />
+                <div className="buttons">
+                    <button className="btn-inc" onClick={ this.inc }> + </button>
+                    <button className="btn-dec" onClick={ this.dec }> - </button>
                 </div>
             </div> 
         )
