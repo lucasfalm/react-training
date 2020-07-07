@@ -33,10 +33,16 @@ button {
 
 .buttons { 
     text-align: center;
+    margin: 1em;
 }
 
-span { 
-    font-size: 15px;
+.display { 
+    background-color: #86f8f2;
+    color: black;
+    font-size: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 5px;
+    margin: 2em;
+    font-weight: 100;
+    border: 3px solid #86f8f2;
+    border-radius: 1em;
 }

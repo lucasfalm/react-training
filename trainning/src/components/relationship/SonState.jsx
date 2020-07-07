@@ -2,7 +2,7 @@ import React from 'react'
 
 export default props => {
     const data = props.click
-    const giveName = () => "Lucas"
+    const giveName = () => { "Lucas" }
     const giveLastName = () => "Feijo"
     return (
     <div>

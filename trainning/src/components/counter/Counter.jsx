@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import './Counter.css'
+import Display from './Display'
+import Input from './Input'
+import Buttons from './Buttons'
 
 class Counter extends Component { 
 
@@ -21,21 +24,18 @@ class Counter extends Component {
         })
     }
 
-    step = (e) => {
+    step = (newStep) => {
         this.setState({
-            step: parseInt(e.target.value)
+            step: newStep
         })
     }
 
     render() {
         return ( 
             <div>
-                <h2> { this.state.count }</h2>
-                <span> How much </span><input onChange={ this.step } />
-                <div className="buttons">
-                    <button className="btn-inc" onClick={ this.inc }> + </button>
-                    <button className="btn-dec" onClick={ this.dec }> - </button>
-                </div>
+                <Display count={ this.state.count } />
+                <Input count={ this.state.step } step={ this.step }/>
+                <Buttons inc={ this.inc } dec={ this.dec } />
             </div> 
         )
     }
