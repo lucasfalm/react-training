@@ -14,7 +14,7 @@ export default _ => {
     return(
         <div>
             <div>
-                <If content={ name != "?"} >
+                <If content={ name !== "?"} >
                     <span> { name } </span>
                     <strong> { lastname } </strong>
                     <Else>
