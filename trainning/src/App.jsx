@@ -30,7 +30,7 @@ export default _ => // _ with 1 ignored param, could be (), or (props)
                 </Card>
 
                 <Card title="Counter" color="#00ff40"> 
-                    <Counter />
+                    <Counter step={ 10 } />
                 </Card>
 
                 <Card title="Controlled component" color="#303030"> 
