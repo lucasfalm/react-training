@@ -35,8 +35,8 @@ class Millions extends Component {
     render() {
         return(
             <div className="millions">
-                <Display numbers={ this.state.sortedNumbers } actualRange={ this.state.range }/>
-                <Input range={ this.state.range } setRange={ this.setRange } />
+                <Display numbers={ this.state.sortedNumbers } />
+                <Input count={ this.state.range } setRange={ this.setRange } />
                 <Button rangeNumbers={ this.rangeRandomUniqNumbers } />
             </div>
         )
