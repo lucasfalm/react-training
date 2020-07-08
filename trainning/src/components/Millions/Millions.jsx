@@ -22,7 +22,7 @@ class Millions extends Component {
         for(var i = 0; i < this.state.range; i++) {
             var random = Math.floor((Math.random() * 99) + 1)
 
-            if(!numbers.includes(random)) {
+            if(!numbers.includes(random) && random !== 0) {
                 numbers.push(random)       
             }
         }
