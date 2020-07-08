@@ -8,8 +8,8 @@ export default props => {
 
     return(
         <>
-             <p className="input"> How many numbers? </p>
-             <input onChange = { 
+             <p className="input-text"> How many numbers? </p>
+             <input className="input" onChange = { 
                  input => { props.setRange(newRange(input)) }} 
                  value = { props.actualRange }
             />

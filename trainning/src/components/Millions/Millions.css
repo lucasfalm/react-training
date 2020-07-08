@@ -2,9 +2,13 @@
     text-align: center;
 }
 
-.input { 
+.input-text { 
     margin: 1em;
     font-size: 1em;
+}
+
+.input{ 
+    width: 2em;
 }
 
 .btn { 

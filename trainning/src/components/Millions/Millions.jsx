@@ -16,7 +16,7 @@ class Millions extends Component {
         })
     }
 
-    rangeRandomUniqNumbers = () => { 
+    rangeRandomUniqNumbers = _ => { 
         var numbers = []
         
         for(var i = 0; i < this.state.range; i++) {
