@@ -16,10 +16,15 @@ class Millions extends Component {
         })
     }
 
-    rangeNumbers = () => { 
+    rangeRandomUniqNumbers = () => { 
         var numbers = []
+        
         for(var i = 0; i < this.state.range; i++) {
-            numbers.push(Math.floor((Math.random() * 99) + 1))       
+            var random = Math.floor((Math.random() * 99) + 1)
+
+            if(!numbers.includes(random)) {
+                numbers.push(random)       
+            }
         }
     
         this.setState({
@@ -32,7 +37,7 @@ class Millions extends Component {
             <div className="millions">
                 <Display numbers={ this.state.sortedNumbers } actualRange={ this.state.range }/>
                 <Input range={ this.state.range } setRange={ this.setRange } />
-                <Button rangeNumbers={ this.rangeNumbers } />
+                <Button rangeNumbers={ this.rangeRandomUniqNumbers } />
             </div>
         )
     }
