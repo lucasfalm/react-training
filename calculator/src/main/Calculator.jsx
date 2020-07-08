@@ -10,11 +10,12 @@ class Calculator extends Component {
         equation: ''
     }
 
-    calculate = (value) => {
-        let actualEquation = this.state.equation
-        actualEquation += value
+    calculate = (newValue) => {
+        let actual = this.state.equation
+        let update = actual += newValue
+
         this.setState({
-            equation: actualEquation,
+            equation: update,
         })
     }
 
