@@ -70,7 +70,6 @@ class Calculator extends Component {
 
     total = () => { 
         let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
-        console.log(total)
         return (
             this.setState({ 
                 total:  total,
@@ -87,10 +86,13 @@ class Calculator extends Component {
         return(
             <div className="calculator">
                <Display total= { this.state.total } leftHand={ this.state.leftHand } equation={ this.state.equation }  rightHand={ this.state.rightHand }/>
+               <Button column="true" label="AC" click={ this.clear }  />
+               <Button label="-" click={ this.sub } />
+               <Button label="+" click={ this.add } />
                <Button label="1" click={ this.calculate } />
                <Button label="2" click={ this.calculate } />
                <Button label="3" click={ this.calculate } />
-               <Button label="AC" click={ this.clear }  />
+               <Button label="*" click={ this.mult } />
                <Button label="4" click={ this.calculate } />
                <Button label="5" click={ this.calculate } />
                <Button label="6" click={ this.calculate } />
@@ -98,12 +100,10 @@ class Calculator extends Component {
                <Button label="7" click={ this.calculate } />
                <Button label="8" click={ this.calculate } />
                <Button label="9" click={ this.calculate } />
-               <Button label="*" click={ this.mult } />
+               <Button label="%" click={ this.calculate } />
                <Button label="0" click={ this.calculate } />
-               <Button label="-" click={ this.sub } />
-               <Button label="+" click={ this.add } />
-               <Button label="=" click={ this.total } />
                <Button label="." click={ this.calculate } />
+               <Button column="true" label="=" click={ this.total } />
             </div>
         )
     }     

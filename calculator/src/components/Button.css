@@ -16,12 +16,12 @@
     background-color: #ccc;
 }
 
-.button.double { 
+.button.column { 
     grid-column: span 2;
 }
 
-.button.triple { 
-    grid-column: span 3;
+.button.row { 
+    grid-row: span 2;
 }
 
 .button-operation { 
