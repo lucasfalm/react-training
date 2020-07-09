@@ -13,42 +13,15 @@ class Calculator extends Component {
         rightHand: ''
     }
 
-    sub = () => {        
+    setEquationType = (equationType) => { 
         if(this.state.flag) {
             let total =+ makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
-            this.prepareOperation(false, total, '-')
+            this.prepareOperation(false, total, equationType)
         } else {
-            this.prepareOperation(true, this.state.total, '-')
+            this.prepareOperation(true, this.state.total, equationType)
         }
     }
-
-    add = () => {        
-        if(this.state.flag) {
-            let total =+ makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
-            this.prepareOperation(false, total, '+')
-        } else {
-            this.prepareOperation(true, this.state.total, '+')
-        }
-    }
-
-    mult = () => {        
-        if(this.state.flag) {
-            let total =+ makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
-            this.prepareOperation(false, total, '*')
-        } else {
-            this.prepareOperation(true, this.state.total, '*')
-        }
-    }
-
-    div = () => {        
-        if(this.state.flag) {
-            let total =+ makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
-            this.prepareOperation(false, total, '/')
-        } else {
-            this.prepareOperation(true, this.state.total, '/')
-        }
-    }
-
+    
     prepareOperation = (status, total, equationType) => { 
         this.setState({
             total: total,
@@ -56,7 +29,6 @@ class Calculator extends Component {
             equation: equationType,
         })
     }
-
 
     calculate = (value) => {     
         if(this.state.flag) { 
@@ -87,16 +59,16 @@ class Calculator extends Component {
             <div className="calculator">
                <Display total= { this.state.total } leftHand={ this.state.leftHand } equation={ this.state.equation }  rightHand={ this.state.rightHand }/>
                <Button column="true" label="AC" click={ this.clear }  />
-               <Button label="-" click={ this.sub } />
-               <Button label="+" click={ this.add } />
+               <Button label="-" click={ this.setEquationType } />
+               <Button label="+" click={ this.setEquationType } />
                <Button label="1" click={ this.calculate } />
                <Button label="2" click={ this.calculate } />
                <Button label="3" click={ this.calculate } />
-               <Button label="*" click={ this.mult } />
+               <Button label="*" click={ this.setEquationType } />
                <Button label="4" click={ this.calculate } />
                <Button label="5" click={ this.calculate } />
                <Button label="6" click={ this.calculate } />
-               <Button label="/" click={ this.div } />
+               <Button label="/" click={ this.setEquationType } />
                <Button label="7" click={ this.calculate } />
                <Button label="8" click={ this.calculate } />
                <Button label="9" click={ this.calculate } />
