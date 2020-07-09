@@ -47,7 +47,10 @@ class Calculator extends Component {
         }
     }
 
-    total = () => { 
+    total = () => {
+        if(!this.state.flag || this.state.rightHand === '') {
+            return
+        }
         let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
         return (
             this.setState({ 
