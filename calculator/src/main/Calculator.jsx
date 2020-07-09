@@ -85,9 +85,10 @@ export default Calculator
 function makeCalc(left, right, expression) { 
     let result = 0
     let avaliableExpressions = ['-', '+', '*', '/']
-    for(var i=0; i<= avaliableExpressions.length; i++) { 
-        if(expression === avaliableExpressions[i]) { 
-            switch(i) {
+
+    for(var expressionIndex = 0; expressionIndex <= avaliableExpressions.length; expressionIndex++) { 
+        if(expression === avaliableExpressions[expressionIndex]) { 
+            switch(expressionIndex) {
                 case 0:
                     result = parseInt(left) - parseInt(right)
                     break
