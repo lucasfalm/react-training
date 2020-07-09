@@ -90,7 +90,7 @@ class Calculator extends Component {
                <Button label="7" click={ this.increment } />
                <Button label="8" click={ this.increment } />
                <Button label="9" click={ this.increment } />
-               <Button label="%" click={ this.increment } />
+               <Button label="%" click={ this.setEquationType } />
                <Button label="0" click={ this.increment } />
                <Button label="." click={ this.increment } />
                <Button column="true" label="=" click={ this.total } />
@@ -102,7 +102,7 @@ export default Calculator
 
 function makeCalc(left, right, expression) { 
     let result = 0
-    let avaliableExpressions = ['-', '+', '*', '/']
+    let avaliableExpressions = ['-', '+', '*', '/', '%']
 
     for(var expressionIndex = 0; expressionIndex <= avaliableExpressions.length; expressionIndex++) { 
         if(expression === avaliableExpressions[expressionIndex]) { 
@@ -118,6 +118,9 @@ function makeCalc(left, right, expression) {
                     break  
                 case 3:
                     result =  parseInt(left) / parseInt(right)
+                    break
+                case 4:
+                    result =  parseInt(left) % parseInt(right)
                     break
             }
         }
