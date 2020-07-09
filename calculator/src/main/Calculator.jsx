@@ -17,19 +17,16 @@ class Calculator extends Component {
         if(this.state.flag) {
             let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
             total += this.state.total
-            this.prepareOperation(false, total, equationType)
-            return
+            this.prepareOperation(true, total, equationType)
         } else {
             this.prepareOperation(true, this.state.total, equationType)
-            return
         }
     }
     
     prepareOperation = (status, total, equationType) => { 
-        if(!status) { 
+        if(status) { 
             this.setState({
-                leftHand: '',
-                rightHand: ''
+                rightHand: '',
             })
         }
     
