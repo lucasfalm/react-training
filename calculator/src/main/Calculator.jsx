@@ -14,11 +14,15 @@ class Calculator extends Component {
     }
 
     setEquationType = (equationType) => { 
+        let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
+        
         if(this.state.flag) {
-            let total =+ makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
+            // flag is always true, there is no runtime to change it
+            total += this.state.total
             this.prepareOperation(false, total, equationType)
         } else {
             this.prepareOperation(true, this.state.total, equationType)
+            return
         }
     }
     
@@ -30,7 +34,7 @@ class Calculator extends Component {
         })
     }
 
-    calculate = (value) => {     
+    increment = (value) => {     
         if(this.state.flag) { 
             let actual = this.state.rightHand
             this.setState({ rightHand: actual + value })
@@ -61,20 +65,20 @@ class Calculator extends Component {
                <Button column="true" label="AC" click={ this.clear }  />
                <Button label="-" click={ this.setEquationType } />
                <Button label="+" click={ this.setEquationType } />
-               <Button label="1" click={ this.calculate } />
-               <Button label="2" click={ this.calculate } />
-               <Button label="3" click={ this.calculate } />
+               <Button label="1" click={ this.increment } />
+               <Button label="2" click={ this.increment } />
+               <Button label="3" click={ this.increment } />
                <Button label="*" click={ this.setEquationType } />
-               <Button label="4" click={ this.calculate } />
-               <Button label="5" click={ this.calculate } />
-               <Button label="6" click={ this.calculate } />
+               <Button label="4" click={ this.increment } />
+               <Button label="5" click={ this.increment } />
+               <Button label="6" click={ this.increment } />
                <Button label="/" click={ this.setEquationType } />
-               <Button label="7" click={ this.calculate } />
-               <Button label="8" click={ this.calculate } />
-               <Button label="9" click={ this.calculate } />
-               <Button label="%" click={ this.calculate } />
-               <Button label="0" click={ this.calculate } />
-               <Button label="." click={ this.calculate } />
+               <Button label="7" click={ this.increment } />
+               <Button label="8" click={ this.increment } />
+               <Button label="9" click={ this.increment } />
+               <Button label="%" click={ this.increment } />
+               <Button label="0" click={ this.increment } />
+               <Button label="." click={ this.increment } />
                <Button column="true" label="=" click={ this.total } />
             </div>
         )
