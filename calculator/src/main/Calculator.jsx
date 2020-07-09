@@ -13,7 +13,14 @@ class Calculator extends Component {
         rightHand: ''
     }
 
-    setEquationType = (equationType) => { 
+    setEquationType = (equationType) => {
+        if(this.state.flag && this.state.rightHand === '') {
+            this.setState({
+                equation: equationType
+            })
+            return
+        }
+
         if(this.state.flag) {
             let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
             total += this.state.total
@@ -51,6 +58,7 @@ class Calculator extends Component {
         if(!this.state.flag || this.state.rightHand === '') {
             return
         }
+
         let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
         return (
             this.setState({ 
