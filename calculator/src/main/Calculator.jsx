@@ -26,6 +26,13 @@ class Calculator extends Component {
     }
     
     prepareOperation = (status, total, equationType) => { 
+        if(!status) { 
+            this.setState({
+                leftHand: '',
+                rightHand: ''
+            })
+        }
+    
         this.setState({
             total: total,
             flag: status,
@@ -55,7 +62,7 @@ class Calculator extends Component {
         )
     }
 
-    clear = () => { this.setState({ total: 0, equation: '', flag: false, leftHand: '', rightHand: ''})}
+    clear = () => { this.setState({ total: '', equation: '', flag: false, leftHand: '', rightHand: ''})}
 
     render() { 
         return(

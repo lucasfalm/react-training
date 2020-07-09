@@ -3,8 +3,9 @@ import './Display.css'
 
 export default props => {
     let display = ''
-    if( props.total != '') { 
-        display = props.total
+
+    if( props.total !== '') { 
+        display = props.total + props.equation +  props.leftHand
     } else { 
         display =  props.leftHand + props.equation + props.rightHand
     }
