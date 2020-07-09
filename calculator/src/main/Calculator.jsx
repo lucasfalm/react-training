@@ -14,12 +14,11 @@ class Calculator extends Component {
     }
 
     setEquationType = (equationType) => { 
-        let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
-        
         if(this.state.flag) {
-            // flag is always true, there is no runtime to change it
+            let total = makeCalc(this.state.leftHand, this.state.rightHand, this.state.equation)
             total += this.state.total
             this.prepareOperation(false, total, equationType)
+            return
         } else {
             this.prepareOperation(true, this.state.total, equationType)
             return
