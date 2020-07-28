@@ -7,6 +7,6 @@ import React from 'react'
 
 export default props => (
     <div className='container'>
-
+        <h2> Opa! </h2>
     </div>
 )
