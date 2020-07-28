@@ -1,12 +1,10 @@
 import React, { Component } from 'react'
 
-export default class Todo extends Component {
-
-    render() {
-        return (
+export default props => {
+        
+    return (
             <div>
                 <h1> Teste </h1>
             </div>
         )
-    }
 }
