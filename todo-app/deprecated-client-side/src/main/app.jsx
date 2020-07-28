@@ -1,12 +1,12 @@
 import 'modules/bootstrap/dist/css/bootstrap.min.css'
 import 'modules/font-awesome/css/font-awesome.min.css'
-import '../template/custom.css'
 
 import React from 'react'
 
-
-export default props => (
-    <div className='container'>
-        <h2> Opa! </h2>
-    </div>
-)
+export default _ => {
+    return (
+        <div className='container'>
+            <h1>teste</h1>
+        </div>
+    )
+}
