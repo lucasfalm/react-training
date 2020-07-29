@@ -9,10 +9,10 @@ export default _ =>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Tarefas <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#/todos">Tarefas</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Sobre <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#/about">Sobre</a>
                 </li>
             </ul>
         </div>
