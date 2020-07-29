@@ -3,8 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import '@fortawesome/react-fontawesome'
 
 import React from 'react'
-import Todo from '../todo/todo'
-import About from '../about/about'
+import Routes from './routes'
 import Menu from '../template/menu'
 
 function App() {
@@ -12,8 +11,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Menu />
-        <Todo />
-        <About />
+        <Routes />
       </header>
     </div>
   );
