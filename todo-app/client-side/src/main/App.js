@@ -1,3 +1,7 @@
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '@fortawesome/react-fontawesome'
+
 import React from 'react';
 import './App.css';
 import Todo from '../todo/todo'

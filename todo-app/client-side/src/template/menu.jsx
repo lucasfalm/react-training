@@ -1,8 +1,7 @@
 import React from 'react'
 
-export default _ => {
-    return(
-        <nav className='navbar navbar-inverse bg-inverse'>
+export default props => (
+    <nav className='navbar navbar-inverse bg-inverse'>
         <div className='container'>
             <div className='navbar-header'>
                 <a className='navbar-brand' href='#'>
@@ -18,6 +17,4 @@ export default _ => {
             </div>
         </div>
     </nav>
-    )
-
-}
+)
