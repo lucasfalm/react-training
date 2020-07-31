@@ -1,9 +1,10 @@
 import React from 'react'
+import PageHeader from '../template/pageHeader'
 
-export default props => {
+export default _ => {
     return (
             <div>
-                <h1> ABOUT </h1>
+                <PageHeader name='About' small='new'></PageHeader>
             </div>
         )
 }
